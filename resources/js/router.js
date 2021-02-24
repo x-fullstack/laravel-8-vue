@@ -1,13 +1,13 @@
-import { createRouter, createWebHashHistory} from 'vue-router';
+import {createRouter, createWebHashHistory} from 'vue-router';
 
 
 const routes = [
-    { path: '/', component: require('./components/ExampleComponent.vue').default },
-    { path: '/about', component: require('./components/FooComponent.vue').default },
+    {path: '/', component: () => import('./components/ExampleComponent.vue')},
+    {path: '/about', component: () => import('./components/FooComponent.vue')},
 ];
 
 const router = new createRouter({
-    history:  createWebHashHistory('/vue/'),
+    history: createWebHashHistory('/vue/'),
     routes: routes,
 });
 
