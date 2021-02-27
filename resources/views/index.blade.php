@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://unpkg.com/element-plus/lib/theme-chalk/index.css">
 
 </head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <body style="height: 100%">
 <div id="app">
 </div>

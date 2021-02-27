@@ -26,9 +26,12 @@
 </template>
 
 <script>
+    import a from '../utils/hello'
     export default {
         mounted() {
             console.log('Component mounted.')
+
+            a();
         }
     }
 </script>
